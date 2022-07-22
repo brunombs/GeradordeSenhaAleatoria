@@ -1,3 +1,4 @@
+
 let sliderElement = document.querySelector("#slider");
 let buttonElement = document.querySelector("#button");
 
@@ -26,4 +27,9 @@ function generatePassword(){
   containerPassword.classList.remove("hide")
   password.innerHTML = pass;
   novaSenha = pass;
+}
+
+function copyPassword(){
+  alert("Senha copiada com sucesso.")
+  navigator.clipboard.writeText(novaSenha);
 }
